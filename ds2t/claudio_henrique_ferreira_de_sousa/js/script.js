@@ -1,6 +1,9 @@
 'use strict'
 
-import {contatos} from '../recursos/contatos.js'
+// import {contatos} from '../recursos/contatos.js'
+import {preencherDados} from "./main.js"
+
+const contatos = await preencherDados('1')
 
 
 const criaCard = (contato, indice) => {
@@ -24,6 +27,7 @@ const criaCard = (contato, indice) => {
 
 
     })
+
 
     const foto = document.createElement('img')
     foto.classList.add('card__image')
